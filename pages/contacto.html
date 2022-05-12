@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El titulo cambia con cada entrega -->
+    <title>Primera Entrega - Proyecto Final</title>
+    <!-- Logo de la empresa -->
+    <link rel="shortcut icon" href="../img/Logo_Puga.png">
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="bodyProyectoGrid">
+    <header class="headerProyectoGrid">
+        <!-- Encabezado con Título y botonera de navegación -->
+        <h1 class="titulos">Proyecto Tienda Joyería PUGA</h1>
+        <nav class="menuNav">
+            <ul class="menuPrincipal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="quien_somos.html">Quienes Somos</a></li>
+                <li><a href="promocion.html">Promociones</a></li>
+                <li><a href="productos.html">Productos</a>
+                    <ul class="subMenuPrincipal">
+                        <li><a href="productos.html#Anillos">Anillos</a></li>
+                        <li><a href="productos.html#Relojes">Relojes</a></li>
+                        <li><a href="productos.html#Accesorios">Accesorios</a></li>
+                        <li><a href="productos.html#Marroquineria">Marroquinería</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <!-- El logo lo posiciono en el header
+        cuando aprenda bien FLEX y GRID la idea es incorporarlo al header -->
+        <div class="imgLogo">
+            <a href="../index.html">
+                <img src="../img/Logo_Puga.png" alt="Joyeria_Puga">
+            </a>
+        </div>
+    </header>
+
+    <main class="mainContactoGrid">
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <form class="formulario">
+                <h2 class="subTitulos">Formulario de Contacto</h2>
+                <div class="contenedorInput">
+                    <input class="campo campoAlto" type="text" placeholder="Ingrese su nombre">
+                    <input class="campo campoAlto" type="text" placeholder="Ingrese su apellido">
+                    <input class="campo campoAlto" type="email" placeholder="Ingrese su email">
+                </div>
+                <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+                    placeholder="Ingrese su mensaje"></textarea>
+                <input class="botones botonContacto" type="submit">
+            </form>  
+            <!-- Ubicación en próximas entregas la tralado a la página de contacto -->
+            <div class="seccionUbicacion">
+                <div>
+                    <h1 class="titulos">Te esperamos</h1>
+                    <p><strong>Burgos 666 - Azul - Buenos Aires 
+                        - Tel: 02281431166</strong> </p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.9152408306163!2d-59.863212890958984!3d-36.77870005769315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959427754e2a0fb1%3A0x879d1a995ef28989!2sJoyer%C3%ADa%20Puga!5e0!3m2!1ses!2sar!4v1650068308962!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="botonWhatsApp">
+        <img src="../img/logoWhatsapp.png" alt="">
+    </div>
+    
+    <footer class="footerProyectoGrid">
+        <!-- Por ahora sencillo, luego le agregaré más contenido 
+        conociendo más herramientas -->
+        <p>Sitio Web creado por <strong>Andosoft</strong></p>
+    </footer>
+    
+</body>
+
+</html>
