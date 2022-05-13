@@ -88,6 +88,7 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
+    z-index: 100;
 }
 
 .subMenuPrincipal li a {
@@ -300,6 +301,10 @@ main {
     padding: 10px;
     margin: 10px auto;
 }
+
+.campo:focus {
+    box-shadow: 3px 3px 10px #CE7D35;   
+ }
 
 .campoAlto:focus {
    height: 30px;
