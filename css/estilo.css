@@ -156,6 +156,7 @@ li {
     font-style: italic;
     font-size: larger;
 }
+
 /* Formato para botón Contacto */
 .botones {
     text-decoration: none;
@@ -165,8 +166,6 @@ li {
     padding: 14px 32px;
     border-radius: 4px;
     color: #fff;
-    /* background-color: #3fbbc0; */
-    /* Cambios -- Clase 8 */
     background-image: linear-gradient(to right, blanchedalmond, #CE7D35);
 }
 
@@ -355,6 +354,12 @@ main {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+/* Animacion al botón WHATSAPP */
+.botonWhatsApp img:hover {
+    transform: translateX(-3px);
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .8s;
 }
 
 /* APLICAMOS GRID AREA AL INDEX*/
