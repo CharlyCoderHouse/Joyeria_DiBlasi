@@ -118,6 +118,44 @@ li {
     padding: 5px;
 }
 
+/* CAJA CON IMAGEN Y ANIMACION */
+
+.portadaImagen {
+    background-image: url("../img/rosa_perlas.jpg");
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+/* CAJA ANIMADA */
+
+.cajaAnimada {
+    border-top: 2px solid #CE7D35;
+    border-radius: 4px;
+    height: 250px;
+    width: 500px;
+    margin: 30px;
+    position: absolute;
+    /* Centramos de forma simple */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: burlywood;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 10px;
+    opacity: 90%;
+    max-width: 90%;
+}
+
+.cajaAnimada p {
+    font-style: italic;
+    font-size: larger;
+}
 /* Formato para botón Contacto */
 .botones {
     text-decoration: none;
