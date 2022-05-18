@@ -23,23 +23,50 @@ body {
     flex-direction: column;
 }
 
-/* Logo de la empresa Arriba a la izquierda */
+/* Logo de la empresa tamaño */
 .imgLogo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.imgLogo img{
     height: 100px;
     width: 140px;
 }
+
+.colNavbar {
+    background-color: transparent;
+    text-align: center;
+    border-bottom: blanchedalmond solid 3px;
+}
+
+.fuentesNav {
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fuentesNav:hover {
+    color: #CE7D35;
+    transition: all .3s;
+}
+
+.fuentesNav:focus {
+    color: #CE7D35;
+}
+
+.subMenu {
+    background: blanchedalmond;
+    border: none;
+    z-index: 100;
+}
+
+.subMenu .fuentesNav:hover {
+
+    background-color: transparent;
+ }
 
 /* Formato para los títulos */
 .titulos {
     color: chocolate;
     text-align: center;
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-style: italic;
     margin: auto;
     padding: 10px;
@@ -48,7 +75,7 @@ body {
 /* Formato para los SUB títulos */
 .subTitulos {
     color: chocolate;
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
 }
 
@@ -176,8 +203,8 @@ li {
     /* Cubic-bezier = Es la curva de tiempo que usan todas las transiciones CSS */
 }
 
-.botones:active{
-    transform:translateY(3px);
+.botones:active {
+    transform: translateY(3px);
 }
 
 /* Formato al main */
@@ -246,7 +273,7 @@ main {
     margin: 15px;
     border: 1px solid #CE7D35;
     border-radius: 4px;
-    box-shadow: 3px 3px 10px #CE7D35;   
+    box-shadow: 3px 3px 10px #CE7D35;
 }
 
 .cajaProductosInt {
@@ -284,7 +311,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #CE7D35 ;
+    border: 1px solid #CE7D35;
     border-radius: 4px;
 }
 
@@ -303,11 +330,11 @@ main {
 }
 
 .campo:focus {
-    box-shadow: 3px 3px 10px #CE7D35;   
- }
+    box-shadow: 3px 3px 10px #CE7D35;
+}
 
 .campoAlto:focus {
-   height: 30px;
+    height: 30px;
 }
 
 .botonContacto {
@@ -371,10 +398,10 @@ main {
 
 .bodyProyectoGrid {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "cuerpo cuerpo cuerpo"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "cuerpo cuerpo cuerpo"
+        "footer footer footer";
 }
 
 .headerProyectoGrid {
@@ -385,7 +412,7 @@ main {
 
 .mainIndexGrid {
     grid-area: cuerpo;
-    
+
 }
 
 .footerProyectoGrid {
@@ -396,10 +423,10 @@ main {
 
 .bodyProyectoGrid {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "cuerpo cuerpo cuerpo"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "cuerpo cuerpo cuerpo"
+        "footer footer footer";
 }
 
 .headerProyectoGrid {
@@ -410,7 +437,7 @@ main {
 
 .mainSomos {
     grid-area: cuerpo;
-    
+
 }
 
 .footerProyectoGrid {
@@ -421,10 +448,10 @@ main {
 
 .bodyProyectoGrid {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "cuerpo cuerpo cuerpo"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "cuerpo cuerpo cuerpo"
+        "footer footer footer";
 }
 
 .headerProyectoGrid {
@@ -435,7 +462,7 @@ main {
 
 .mainPromocion {
     grid-area: cuerpo;
-    
+
 }
 
 .footerProyectoGrid {
@@ -446,10 +473,10 @@ main {
 
 .bodyProyectoGrid {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "cuerpo cuerpo cuerpo"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "cuerpo cuerpo cuerpo"
+        "footer footer footer";
 }
 
 .headerProyectoGrid {
@@ -460,7 +487,7 @@ main {
 
 .mainProductos {
     grid-area: cuerpo;
-    
+
 }
 
 .footerProyectoGrid {
@@ -471,10 +498,10 @@ main {
 
 .bodyProyectoGrid {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "cuerpo cuerpo cuerpo"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "cuerpo cuerpo cuerpo"
+        "footer footer footer";
 }
 
 .headerProyectoGrid {
@@ -482,9 +509,10 @@ main {
     /* position: sticky;
     top: 0; */
 }
+
 .mainContactoGrid {
     grid-area: cuerpo;
-   
+
 }
 
 .footerProyectoGrid {
@@ -494,33 +522,50 @@ main {
 /* DISEÑO RESPONSIVE */
 /* APLICAMOS MEDIAS QUERIES */
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:768px) {
+ 
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,105,30, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
+    .custom-toggler.navbar-toggler {
+        border-width: 2px;
+        border-color: #CE7D35;
+        opacity: 90%;
+    }
+    
+}
+
+@media screen and (max-width:991px) {
+
     /* Main general Paddings */
     main {
         padding: 15px 2px 5px 2px;
-    }    
+    }
 
     .bodyProyectoGrid {
         display: grid;
-        grid-template-areas: 
-        ". . header"
-        "cuerpo cuerpo cuerpo"
-        "footer footer footer";
+        grid-template-areas:
+            ". . header"
+            "cuerpo cuerpo cuerpo"
+            "footer footer footer";
     }
 
     /* Header lo achico */
     .headerProyectoGrid {
         height: 75px;
     }
+
     /* Oculto titulos */
     .headerProyectoGrid .titulos {
         display: none;
     }
+
     /* Centro el logo de la empresa */
     .imgLogo img {
         height: 80px;
         width: 110px;
-    } 
+    }
 
     /* Achico el borde del menú navegador */
     .menuNav {
@@ -528,7 +573,7 @@ main {
         margin: 15px 10px 0px 0px;
         border-bottom: blanchedalmond solid 3px;
     }
-    
+
     .menuPrincipal li a {
         display: block;
         padding: 5px 5px;
@@ -546,6 +591,7 @@ main {
         padding: 10px;
         flex-direction: column;
     }
+
     .seccionInfo2 {
         padding: 10px;
         flex-direction: column;
@@ -557,9 +603,9 @@ main {
         align-content: center;
         justify-content: space-around;
     }
-    
+
     /* PAGE PROMOCION/PRODUCTOS */
-    
+
     .cajaProductos {
         display: flex;
         flex-direction: column;
@@ -574,6 +620,7 @@ main {
         justify-content: center;
         /* border: none; */
     }
+
     .campo {
         width: 100%;
         padding-left: 0;
@@ -581,4 +628,3 @@ main {
     }
 
 }
-
