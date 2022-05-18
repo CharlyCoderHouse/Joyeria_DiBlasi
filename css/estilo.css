@@ -54,7 +54,6 @@ body {
 .subMenu {
     background: blanchedalmond;
     border: none;
-    /* z-index: 100; */
 }
 
 .subMenu .fuentesNav:hover {
@@ -75,72 +74,11 @@ body {
 .subTitulos {
     color: chocolate;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     padding: 10px;
 }
 
-/* Este código lo vi desde ejemplos para realizar menú y submenu con animacion
-   primero lo hice como explico Samuel y despues le di formato */
-.menuNav {
-    width: 650px;
-    margin: 30px auto;
-    border-bottom: blanchedalmond solid 3px;
-}
-
-.menuNav ul {
-    list-style-type: none;
-}
-
-.menuPrincipal li {
-    display: inline-block;
-}
-
-.menuPrincipal li a {
-    display: block;
-    padding: 10px 15px;
-    color: #353535;
-    /* font-family: 'Roboto', sans-serif; */
-    text-decoration: none;
-}
-
-.menuPrincipal li a:hover {
-    color: #CE7D35;
-    transition: all .3s;
-}
-
-.subMenuPrincipal {
-    position: absolute;
-    background: blanchedalmond;
-    width: 110%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1.5s;
-    z-index: 100;
-}
-
-.subMenuPrincipal li a {
-    display: block;
-    padding: 5px;
-    color: #353535;
-    /* font-family: 'Roboto', sans-serif; */
-    text-decoration: none;
-}
-
-.menuPrincipal li:hover .subMenuPrincipal {
-    display: block;
-    visibility: visible;
-    opacity: 1;
-}
-
-ul {
-    list-style-type: none;
-    font-size: 0;
-}
-
 li {
-    display: inline-block;
-    position: relative;
-    font-weight: bold;
-    font-size: 16px;
     margin: 5px;
     padding: 5px;
 }
@@ -234,8 +172,8 @@ main {
 
 /* formato a todas las imagenes de productos */
 .fotoProductos {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 30px;
 }
 
@@ -281,6 +219,9 @@ main {
     width: max-content;
     margin: 5px;
     padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -324,6 +265,7 @@ main {
 .campo {
     display: block;
     width: 50%;
+    height: 50%;
     padding: 10px;
     margin: 10px auto;
 }
@@ -333,7 +275,7 @@ main {
 }
 
 .campoAlto:focus {
-    height: 30px;
+    height: 60px;
 }
 
 .botonContacto {
@@ -533,6 +475,16 @@ main {
         opacity: 90%;
     }
     
+    li {
+        text-align: center;
+        margin: 2px;
+        padding: 2px;        
+    }
+
+    .subMenu {
+        background: transparent;
+        border: none;
+    }
 }
 
 @media screen and (max-width:991px) {
