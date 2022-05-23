@@ -14,48 +14,60 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Hoja de estilo propia-->
     <link rel="stylesheet" href="../css/estilo.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md colNavbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../img/Logo_Puga.png" alt="Joyeria_Puga"></a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" href="quien_somos.html">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fuentesNav" href="promocion.html">Promociones</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fuentesNav" href="productos.html" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item fuentesNav" href="productos.html#Anillo">Anillos</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="productos.html#Relojes">Relojes</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="productos.html#Accesorios">Accesorios</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="productos.html#Marroquineria">Marroquinería</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" href="contacto.html">Contactanos</a>
-                    </li>
-                </ul>
+    <!-- Encabezado con boostrap -->
+    <header>
+        <nav class="navbar navbar-expand-md colNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imgLogo" src="../img/Logo_Puga.png" alt="Joyeria_Puga"></a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="quien_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fuentesNav" href="promocion.html">Promociones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuentesNav" href="productos.html" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Anillo">Anillos</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Relojes">Relojes</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Accesorios">Accesorios</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="productos.html#Marroquineria">Marroquinería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mainPromocion">
+        <!-- Agrego imagen de fondo con Caja animada -->
+        <div class="portadaImagen">
+            <div class="cajaAnimada animate__animated animate__backInUp">
+                <h1>Queremos conocerte</h1>
+                <p>Dejanos tu consulta y te llamamos para asesorarte en tu regalo.</p>
+                <a class="botones" href="contacto.html">Consultas!</a>
             </div>
         </div>
-    </nav>
-
-    <main class="mainPromocion">
         <!-- Dos secciones con la info de las promociones y luego las fotos de los
         productos en promoción -->
         <section>

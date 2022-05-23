@@ -25,54 +25,85 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md colNavbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/Logo_Puga.png" alt="Joyeria_Puga"></a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active fuentesNav" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" href="pages/quien_somos.html">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" href="pages/promocion.html">Promociones</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fuentesNav" href="pages/productos.html" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
-                        <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Anillo">Anillos</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Relojes">Relojes</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Accesorios">Accesorios</a></li>
-                            <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Marroquineria">Marroquinería</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fuentesNav" href="pages/contacto.html">Contactanos</a>
-                    </li>
-                </ul>
+    <!-- Encabezado con boostrap -->
+    <header>
+        <nav class="navbar navbar-expand-md colNavbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="imgLogo" src="img/Logo_Puga.png" alt="Joyeria_Puga"></a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active fuentesNav" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/quien_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/promocion.html">Promociones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fuentesNav" href="pages/productos.html" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu subMenu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Anillo">Anillos</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Relojes">Relojes</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Accesorios">Accesorios</a></li>
+                                <li><a class="dropdown-item fuentesNav" href="pages/productos.html#Marroquineria">Marroquinería</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fuentesNav" href="pages/contacto.html">Contactanos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </header>
     <main class="mainIndexGrid">
-
-        <!-- Agrego imagen de fondo con Caja animada -->
-        <div class="portadaImagen">
-            <div class="cajaAnimada animate__animated animate__backInUp">
-                <h1>Queremos conocerte</h1>
-                <p>Dejanos tu consulta y te llamamos para asesorarte en tu regalo.</p>
-                <a class="botones" href="pages/contacto.html">Consultas!</a>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="8000">
+                <img src="img/F100026172.jpg" class="d-block w-100 tamanoCaro img-fluid" alt="anillos_relojes">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Joyería Puga</h1>
+                  <p>Donde encontraras ese regalo especial, con el mejor asesoramiento.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="8000">
+                <img src="img/F100013335.jpg" class="d-block w-100 tamanoCaro img-fluid" alt="anillos_casamiento">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Promociones</h5>
+                  <p>Conocé nuestras ofertas para cada ocación</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="8000">
+                <img src="img/piedras_collar.jpg" class="d-block w-100 tamanoCaro img-fluid" alt="piedas_collares">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Queres conocernos?</h5>
+                  <p>Escribinos y nos ponemos en contacto.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <!-- Dos secciones una de información -->
         <section class="seccionInfo">
@@ -87,7 +118,7 @@
                     assumenda enim voluptates mollitia ipsa, a asperiores qui! Nostrum ad qui voluptatum magni
                     consequuntur!</p>
             </nav>
-            <img class="fotos img-fluid" src="img/anillos_puga.jpg" alt="Joyeria_Puga_anillos">
+            <img class="fotos img-respondive" src="img/anillos_puga.jpg" alt="Joyeria_Puga_anillos">
         </section>
         <section class="seccionInfo2">
             <nav class="texto">
@@ -101,7 +132,7 @@
                     assumenda enim voluptates mollitia ipsa, a asperiores qui! Nostrum ad qui voluptatum magni
                     consequuntur!</p>
             </nav>
-            <img class="fotos img-fluid" src="img/local_frente.jpeg" alt="Joyeria_Puga_Local">
+            <img class="fotos img-responsive" src="img/local_frente.jpeg" alt="Joyeria_Puga_Local">
         </section>
     </main>
 
