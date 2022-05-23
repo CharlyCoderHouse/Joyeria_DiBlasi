@@ -17,8 +17,12 @@ body {
 }
 
 .tamanoCaro {
-    height: 100%;
-    object-fit: cover;
+    height: 600px;
+}
+
+.imgCaro {
+    max-height: 100%;
+    max-width: 100%;
 }
 /* Le doy color y tamaño al encabezado */
 .headerProyectoGrid {
@@ -157,19 +161,23 @@ main {
 .seccionInfo {
     display: flex;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
+
 
 /* Seccion del Index */
 .seccionInfo2 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
 }
 
 /* Formato a los textos */
-.texto p {
+.texto {
+    width: 75%;
+    margin: 10px;
+    text-align: justify;
     align-content: center;
     font-style: italic;
 }
@@ -181,10 +189,16 @@ main {
     margin: 30px;
 }
 
+.cajaFoto {
+    height: auto;
+    width: 400px;
+    margin: 5px;
+}
+
 .fotos {
-    width: 40vw;
-    height: 40vh;
-    margin: 30px;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
 }
 
 /* Estilo PAGE QUIEN_SOMOS */
@@ -549,11 +563,13 @@ main {
     .seccionInfo {
         padding: 10px;
         flex-direction: column;
+        text-align: center;
     }
 
     .seccionInfo2 {
         padding: 10px;
         flex-direction: column;
+        text-align: center;
     }
 
     /* PAGE QUIEN_SOMOS */
