@@ -16,14 +16,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.tamanoCaro {
-    height: 600px;
-}
 
-.imgCaro {
-    max-height: 100%;
-    max-width: 100%;
-}
 /* Le doy color y tamaño al encabezado */
 .headerProyectoGrid {
     height: 150px;
