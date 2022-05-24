@@ -16,7 +16,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
 /* Le doy color y tamaño al encabezado */
 .headerProyectoGrid {
     height: 150px;
@@ -30,6 +29,7 @@ body {
     width: 140px;
 }
 
+/* formato Barra Header */
 .colNavbar {
     background-color: transparent;
     text-align: center;
@@ -61,6 +61,12 @@ body {
     background-color: transparent;
  }
 
+ /* Formato espaciado barra Nav */
+li {
+    margin: 5px;
+    padding: 5px;
+}
+
 /* Formato para los títulos */
 .titulos {
     color: chocolate;
@@ -77,11 +83,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding: 10px;
-}
-
-li {
-    margin: 5px;
-    padding: 5px;
+    text-align: center;
 }
 
 /* CAJA CON IMAGEN Y ANIMACION */
@@ -157,7 +159,6 @@ main {
     padding: 30px;
 }
 
-
 /* Seccion del Index */
 .seccionInfo2 {
     display: flex;
@@ -167,12 +168,20 @@ main {
 }
 
 /* Formato a los textos */
-.texto {
+.textoIndex {
     width: 75%;
     margin: 10px;
     text-align: justify;
     align-content: center;
     font-style: italic;
+}
+
+/* Formato a los textos */
+.texto {
+    width: 95%;
+    margin: 20px;
+    text-align: justify;
+    align-content: center;
 }
 
 /* formato a todas las imagenes de productos */
@@ -209,6 +218,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: #CE7D35 solid 1px;
+    box-shadow: 3px 3px 10px #CE7D35;
+    border-radius: 1rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.videos div {
+    margin: 10px;
 }
 
 /* Estilo PAGE PROMOCION */
@@ -264,21 +284,22 @@ main {
     justify-content: center;
     border: 1px solid #CE7D35;
     border-radius: 4px;
+    padding: 10px;
 }
 
 #contacto form {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 50vw;
+    width: 60vw;
 }
 
 .campo {
     display: block;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     padding: 10px;
-    margin: 10px auto;
+    margin: 10px;
 }
 
 .campo:focus {
@@ -297,25 +318,33 @@ main {
     cursor: pointer;
 }
 
-/* Formato a la caja de ubicación */
 .seccionUbicacion {
-    width: 40vw;
-    margin: 20px 20px;
+    width: 100%;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-evenly;
-    opacity: 90%;
 }
 
-.seccionUbicacion iframe {
-    padding: 5px;
-    width: 90%;
-    /* height: calc(100vh - 400px); */
-    height: 30vmax;
+.seccionUbicacion div p {
+    text-align: center;
 }
 
+.cajaMap {
+    width: 100%;
+    max-width: 560px;
+    height: 415px;
+    max-height: 415px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cajaMap iframe {
+    width: 100%;
+    height: 100%;
+}
 /* Formato al pie */
 .footerProyectoGrid {
     /* background-color: blanchedalmond; */
@@ -329,7 +358,6 @@ main {
     /* font-family: 'Roboto', sans-serif; */
     margin: auto;
 }
-
 
 /* BOTON DE WHATSAPP */
 
