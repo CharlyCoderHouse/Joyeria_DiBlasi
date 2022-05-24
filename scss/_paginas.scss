@@ -1,0 +1,245 @@
+
+  /* CAJA CON IMAGEN Y ANIMACION */
+  .portadaImagen {
+    background-image: url("../img/rosa_perlas.jpg");
+    background-size: cover;
+    height: calc(100vh - 100px);
+  }
+  
+  /* CAJA ANIMADA */
+  .cajaAnimada {
+    border-top: 2px solid $color_titulos;
+    border-radius: 4px;
+    height: 250px;
+    width: 500px;
+    margin: 30px;
+    position: absolute;
+    /* Centramos de forma simple */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: burlywood;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 10px;
+    opacity: 90%;
+    max-width: 90%;
+  
+    p {
+      font-style: italic;
+      font-size: larger;
+    }
+  }
+  
+  /* Formato para botón Contacto */
+  .botones {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    color: #fff;
+    background-image: linear-gradient(to right, $color_headers, $color_titulos);
+  
+    &:hover {
+      transform: translateY(-3px);
+      transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+      /* Cubic-bezier = Es la curva de tiempo que usan todas las transiciones CSS */
+    }
+  
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+  
+  /* Formato al main */
+  main {
+    padding: 20px 5px 10px 5px;
+  }
+  
+  /* Seccion del Index */
+  .seccionInfo {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  /* Seccion del Index */
+  .seccionInfo2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  /* Formato a los textos */
+  .textoIndex {
+    width: 75%;
+    margin: 10px;
+    text-align: justify;
+    align-content: center;
+    font-style: italic;
+  }
+  
+  /* Formato a los textos */
+  .texto {
+    width: 95%;
+    margin: 20px;
+    text-align: justify;
+    align-content: center;
+  }
+  
+  /* formato a todas las imagenes de productos */
+  .fotoProductos {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }
+  
+  .cajaFoto {
+    height: auto;
+    width: 400px;
+    margin: 5px;
+  }
+  
+  .fotos {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+  }
+  
+  /* Estilo PAGE QUIEN_SOMOS */
+  /* Le doy el ancho al formulario de contacto */
+  .mainSomos {
+    padding: 20px 10px 10px 10px;
+  }
+  
+  .historiaSomos {
+    margin: 10px;
+  }
+  
+  .videos {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: $color_titulos solid 1px;
+    box-shadow: 3px 3px 10px $color_titulos;
+    border-radius: 1rem;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  
+    div {
+      margin: 10px;
+    }
+  }
+  
+  /* Estilo PAGE PROMOCION */
+  .cajaProductos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: max-available;
+    margin: 15px;
+    border: 1px solid $color_titulos;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px $color_titulos;
+  }
+  
+  .cajaProductosInt {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    margin: 5px;
+    padding: 5px;
+    font-family: $estilo_fuente;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Estilo PAGE PROMOCION */
+  .secAnillos, .secRelojes, .secAccesorios, .secMarroqui {
+    padding: 10px;
+  }
+  
+  /* Estilo PAGE CONTACTO */
+  /* Le doy el ancho al formulario de contacto */
+  #contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $color_titulos;
+    border-radius: 4px;
+    padding: 10px;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      width: 60vw;
+    }
+  }
+  
+  .campo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+  
+    &:focus {
+      box-shadow: 3px 3px 10px $color_titulos;
+    }
+  }
+  
+  .campoAlto:focus {
+    height: 60px;
+  }
+  
+  .botonContacto {
+    width: 150px;
+    max-width: 90%;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .seccionUbicacion {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  
+    div p {
+      text-align: center;
+    }
+  }
+  
+  .cajaMap {
+    width: 100%;
+    max-width: 560px;
+    height: 415px;
+    max-height: 415px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }

@@ -1,0 +1,13 @@
+   /* Formato al pie */ 
+  .footerProyectoGrid {
+    /* background-color: $color_headers; */
+    display: flex;
+    height: 70px;
+    /* Formato al texto del pie */
+    p {
+      color: black;
+      /* font-family: $estilo_fuente; */
+      margin: auto;
+    }
+  }
+  
