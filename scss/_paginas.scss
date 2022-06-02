@@ -29,7 +29,11 @@
     box-shadow: 10px 10px 10px;
     opacity: 90%;
     max-width: 90%;
-  
+    
+    h2 {
+      color:$color_titulos;
+      font-weight: bold;
+    }
     p {
       font-style: italic;
       font-size: larger;
@@ -65,17 +69,13 @@
   
   /* Seccion del Index */
   .seccionInfo {
-    display: flex;
-    align-items: center;
-    padding: 30px;
+    @include seccionInex;
   }
   
   /* Seccion del Index */
   .seccionInfo2 {
-    display: flex;
+    @include seccionInex;
     flex-direction: row-reverse;
-    align-items: center;
-    padding: 30px;
   }
   
   /* Formato a los textos */

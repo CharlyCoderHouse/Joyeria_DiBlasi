@@ -1,6 +1,3 @@
- /* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
 /* reseteo margenes y padding predefinidos */
 * {
     margin: 0;
@@ -16,7 +13,7 @@
     font-family: $estilo_fuente;
   }
   
-  /* Formato para los títulos */
+ /* Formato para los títulos
   .titulos {
     color: chocolate;
     text-align: center;
@@ -26,7 +23,7 @@
     padding: 10px;
   }
   
-  /* Formato para los SUB títulos */
+  /* Formato para los SUB títulos 
   .subTitulos {
     color: chocolate;
     font-family: $estilo_fuente;
@@ -34,7 +31,8 @@
     padding: 10px;
     text-align: center;
   }
-  
+  */ 
+
   /* BOTON DE WHATSAPP */
 
   .botonWhatsApp img {

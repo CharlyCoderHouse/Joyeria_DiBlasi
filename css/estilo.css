@@ -2,6 +2,20 @@
 /* HOJA ESTILO SASS */
 /* GOOGLE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* Formato para los títulos */
+.titulos, .subTitulos {
+  color: chocolate;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin: auto;
+  padding: 10px; }
+
+/* Formato para los SUB títulos */
+.subTitulos {
+  padding: 0; }
+
 /* reseteo margenes y padding predefinidos */
 * {
   margin: 0;
@@ -15,23 +29,25 @@ body {
   background-size: cover;
   font-family: "Roboto", sans-serif; }
 
-/* Formato para los títulos */
-.titulos {
-  color: chocolate;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  margin: auto;
-  padding: 10px; }
-
-/* Formato para los SUB títulos */
-.subTitulos {
-  color: chocolate;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center; }
-
+/* Formato para los títulos
+  .titulos {
+    color: chocolate;
+    text-align: center;
+    font-family: $estilo_fuente;
+    font-style: italic;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Formato para los SUB títulos 
+  .subTitulos {
+    color: chocolate;
+    font-family: $estilo_fuente;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  */
 /* BOTON DE WHATSAPP */
 .botonWhatsApp img {
   width: 70px;
@@ -111,6 +127,9 @@ li {
   box-shadow: 10px 10px 10px;
   opacity: 90%;
   max-width: 90%; }
+  .cajaAnimada h2 {
+    color: #CE7D35;
+    font-weight: bold; }
   .cajaAnimada p {
     font-style: italic;
     font-size: larger; }
@@ -145,9 +164,9 @@ main {
 /* Seccion del Index */
 .seccionInfo2 {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  padding: 30px; }
+  padding: 30px;
+  flex-direction: row-reverse; }
 
 /* Formato a los textos */
 .textoIndex {
@@ -400,7 +419,7 @@ main {
   .headerProyectoGrid {
     height: 75px;
     /* Oculto titulos */ }
-    .headerProyectoGrid .titulos {
+    .headerProyectoGrid .titulos, .headerProyectoGrid .subTitulos {
       display: none; }
   /* Centro el logo de la empresa */
   .imgLogo img {
