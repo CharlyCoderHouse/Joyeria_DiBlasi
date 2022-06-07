@@ -132,7 +132,7 @@ li {
     font-weight: bold; }
   .cajaAnimada p {
     font-style: italic;
-    font-size: larger; }
+    font-size: 20px; }
 
 /* Formato para botón Contacto */
 .botones {
@@ -174,14 +174,16 @@ main {
   margin: 10px;
   text-align: justify;
   align-content: center;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 25px; }
 
 /* Formato a los textos */
 .texto {
   width: 95%;
   margin: 20px;
   text-align: justify;
-  align-content: center; }
+  align-content: center;
+  font-size: 25px; }
 
 /* formato a todas las imagenes de productos */
 .fotoProductos {
@@ -277,6 +279,9 @@ main {
 
 .campoAlto:focus {
   height: 60px; }
+
+.botonesInput {
+  padding: 5px; }
 
 .botonContacto {
   width: 150px;

@@ -36,7 +36,7 @@
     }
     p {
       font-style: italic;
-      font-size: larger;
+      font-size: 20px;
     }
   }
   
@@ -85,6 +85,7 @@
     text-align: justify;
     align-content: center;
     font-style: italic;
+    font-size: 25px;
   }
   
   /* Formato a los textos */
@@ -93,6 +94,7 @@
     margin: 20px;
     text-align: justify;
     align-content: center;
+    font-size: 25px;
   }
   
   /* formato a todas las imagenes de productos */
@@ -208,6 +210,10 @@
     height: 60px;
   }
   
+  .botonesInput {
+    padding: 5px;
+  }
+
   .botonContacto {
     width: 150px;
     max-width: 90%;
