@@ -29,31 +29,13 @@ body {
   background-size: cover;
   font-family: "Roboto", sans-serif; }
 
-/* Formato para los títulos
-  .titulos {
-    color: chocolate;
-    text-align: center;
-    font-family: $estilo_fuente;
-    font-style: italic;
-    margin: auto;
-    padding: 10px;
-  }
-  
-  /* Formato para los SUB títulos 
-  .subTitulos {
-    color: chocolate;
-    font-family: $estilo_fuente;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-  }
-  */
 /* BOTON DE WHATSAPP */
 .botonWhatsApp img {
   width: 70px;
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 10;
   /* Animacion al botón WHATSAPP */ }
   .botonWhatsApp img:hover {
     transform: translateX(-3px);
@@ -247,6 +229,84 @@ main {
   text-decoration: none;
   text-align: center; }
 
+/* CAJAS PRODUCTOS BOOTSTRAP */
+.card {
+  background: transparent;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  border: 0;
+  border-radius: 1rem; }
+  .card h5 {
+    overflow: hidden;
+    height: 56px;
+    font-weight: 900;
+    font-size: 1.2rem; }
+  .card h2 {
+    font-size: 1rem; }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(1rem - 1px);
+  border-top-right-radius: calc(1rem - 1px); }
+
+.card-img-top {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  padding: 10px; }
+
+.label-top {
+  position: absolute;
+  background-color: #8bc34a;
+  color: #fff;
+  top: 8px;
+  right: 8px;
+  padding: 5px 10px 5px 10px;
+  font-size: .7rem;
+  font-weight: 600;
+  border-radius: 3px;
+  text-transform: uppercase; }
+
+.top-right {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 1rem;
+  font-weight: 900;
+  background: #ff5722;
+  line-height: 90px;
+  text-align: center;
+  color: white; }
+  .top-right span {
+    display: inline-block;
+    vertical-align: middle; }
+
+.clearfix span {
+  font-size: 1rem;
+  font-weight: 900; }
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 900; }
+
+.modal-body p {
+  font-style: italic;
+  font-weight: 600; }
+
+.btn {
+  font-weight: 900; }
+
+.secTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
 /* Estilo PAGE PROMOCION */
 .secAnillos, .secRelojes, .secAccesorios, .secMarroqui {
   padding: 10px; }
@@ -402,6 +462,10 @@ main {
     border-width: 2px;
     border-color: #CE7D35;
     opacity: 90%; }
+  .card h5 {
+    font-size: 1rem; }
+  .card h2 {
+    font-size: .8rem; }
   li {
     text-align: center;
     margin: 2px;

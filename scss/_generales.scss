@@ -13,26 +13,6 @@
     font-family: $estilo_fuente;
   }
   
- /* Formato para los títulos
-  .titulos {
-    color: chocolate;
-    text-align: center;
-    font-family: $estilo_fuente;
-    font-style: italic;
-    margin: auto;
-    padding: 10px;
-  }
-  
-  /* Formato para los SUB títulos 
-  .subTitulos {
-    color: chocolate;
-    font-family: $estilo_fuente;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-  }
-  */ 
-
   /* BOTON DE WHATSAPP */
 
   .botonWhatsApp img {
@@ -40,6 +20,7 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+    z-index: 10;
     /* Animacion al botón WHATSAPP */
     &:hover {
         transform: translateX(-3px);
