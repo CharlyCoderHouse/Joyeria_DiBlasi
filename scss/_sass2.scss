@@ -8,6 +8,7 @@ $fuentesEstilo:(color: chocolate, alineado: center, fuente: $estilo_fuente);
     color: map-get($fuentesEstilo,color);
     text-align: map-get($fuentesEstilo, alineado);
     font-family: map-get($fuentesEstilo, fuente);
+    font-size: 35px;
     font-style: italic;
     font-weight: bold;
     margin: auto;

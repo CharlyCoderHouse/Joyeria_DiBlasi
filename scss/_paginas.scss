@@ -84,17 +84,22 @@
     margin: 10px;
     text-align: justify;
     align-content: center;
-    font-style: italic;
-    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    color: #353535;
+    padding: 5px;
   }
   
   /* Formato a los textos */
   .texto {
     width: 95%;
     margin: 20px;
+    font-family: 'Indie Flower', cursive;
     text-align: justify;
     align-content: center;
-    font-size: 25px;
+    font-size: 28px;
+    color: #353535;
+    padding: 5px;
   }
   
   /* formato a todas las imagenes de productos */
@@ -157,18 +162,6 @@
     box-shadow: 3px 3px 10px $color_titulos;
   }
   
-  .cajaProductosInt {
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    margin: 5px;
-    padding: 5px;
-    font-family: $estilo_fuente;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-  }
-
   /* CAJAS PRODUCTOS BOOTSTRAP */
 
   .card {
@@ -182,7 +175,7 @@
       overflow: hidden;
       height: 56px;
       font-weight: 900;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     h2 {
@@ -243,6 +236,7 @@
   .clearfix {
 
     span {
+      font-family: $estilo_fuente2;
       font-size: 1rem;
       font-weight: 900;
   
@@ -256,6 +250,7 @@
   } 
 
   .modal-body p {
+    font-size: 20px;
     font-style: italic;
     font-weight: 600;
   }
