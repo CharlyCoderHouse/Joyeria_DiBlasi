@@ -1,5 +1,17 @@
   /* DISEÑO RESPONSIVE */
   /* APLICAMOS MEDIAS QUERIES */
+  @media screen and (max-width: 440px) {
+    .contenedorVideo {
+      width: 250px;
+      height: 150px;
+    }
+    .cajaFoto {
+      height: auto;
+      width: 280px;
+      padding: 5px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .custom-toggler {
       .navbar-toggler-icon {

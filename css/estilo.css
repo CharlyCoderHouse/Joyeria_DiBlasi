@@ -372,13 +372,9 @@ main {
     height: 100%; }
 
 /* Formato al pie */
-.footerProyectoGrid {
-  display: flex;
-  height: 70px;
-  /* Formato al texto del pie */ }
-  .footerProyectoGrid p {
-    color: black;
-    margin: auto; }
+.footerProyecto {
+  border-top: blanchedalmond solid 3px;
+  font-family: "Roboto", sans-serif; }
 
 /* APLICAMOS GRID AREA AL INDEX*/
 .bodyProyectoGrid {
@@ -452,6 +448,15 @@ main {
 
 /* DISEÑO RESPONSIVE */
 /* APLICAMOS MEDIAS QUERIES */
+@media screen and (max-width: 440px) {
+  .contenedorVideo {
+    width: 250px;
+    height: 150px; }
+  .cajaFoto {
+    height: auto;
+    width: 280px;
+    padding: 5px; } }
+
 @media screen and (max-width: 768px) {
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(210,105,30, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }

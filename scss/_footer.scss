@@ -1,11 +1,6 @@
    /* Formato al pie */ 
-  .footerProyectoGrid {
-    display: flex;
-    height: 70px;
-    /* Formato al texto del pie */
-    p {
-      color: black;
-      margin: auto;
-    }
+  .footerProyecto {
+    border-top: $color_headers solid 3px;
+    font-family: $estilo_fuente2;
   }
   
